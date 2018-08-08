@@ -6,19 +6,20 @@ using System.Threading.Tasks;
 
 namespace Petstore
 {
-    class Pet
+    public class Pet
     {
         static void Main(string[] args)
         {
             Program.Method();
+            Adding.Add();
         }
 
-            string atype = "";
+            string atype;
             string gender;
             string microchipped;
             string breed;
-            float age;
-            float price;
+            string age;
+            string price;
 
         public string AType
         {
@@ -31,7 +32,7 @@ namespace Petstore
                 atype = value;
             }
         }
-        public float Age
+        public string Age
         {
             get
             {
@@ -75,7 +76,7 @@ namespace Petstore
                 breed = value;
             }
         }
-        public float Price
+        public string Price
         {
             get
             {
@@ -87,7 +88,7 @@ namespace Petstore
             }
         }
     
-        public Pet(string _atype, float _age, string _gender, string _microchipped, string _breed, float _price)
+        public Pet(string _atype, string _age, string _gender, string _microchipped, string _breed, string _price)
         {
             AType = _atype;
             Age = _age;
@@ -106,26 +107,6 @@ namespace Petstore
 
             
 
-            Console.WriteLine("Please Enter the Animal type");
-            string atype = (Console.ReadLine());
-            Console.WriteLine("Please Enter the Animal's age");
-            float age = int.Parse(Console.ReadLine());
-            Console.WriteLine("Please Enter the Animal's gender");
-            string gender = (Console.ReadLine());
-            Console.WriteLine("Is the animal Microschipped (Yes/No)");
-            string microchipped = (Console.ReadLine());
-            Console.WriteLine("Please Enter the Animal's breed");
-            string breed = (Console.ReadLine());            
-            Console.WriteLine("Please Enter the Animal's price");
-            float price = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Pet List");
-            Console.WriteLine("Type: {0}", atype);
-            Console.WriteLine("Age: {0}", age);
-            Console.WriteLine("Gender: {0}", gender);
-            Console.WriteLine("Microchipped: {0}", microchipped);
-            Console.WriteLine("Breed: {0}",breed);
-            Console.WriteLine("Price: ${0}", price);
         }
     }
 }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D90B0277-6ABE-429C-9366-75C5FF5817CE}</ProjectGuid>
+    <ProjectGuid>{82695218-163C-4978-B664-A0BF35A17F0E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Petstore</RootNamespace>
-    <AssemblyName>Petstore</AssemblyName>
+    <RootNamespace>Adding</RootNamespace>
+    <AssemblyName>Adding</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adding.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
