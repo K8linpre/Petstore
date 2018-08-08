@@ -10,7 +10,7 @@ namespace Petstore
     {
 
         
-        static Pet Pet1 = new Pet("","", "", "", "", "");
+        static Pet pet1 = new Pet("", 0, "", "", "", 0);
 
 
 
@@ -23,26 +23,26 @@ namespace Petstore
         {
 
         Console.WriteLine("Please Enter the Animal type");
-            string atype = (Console.ReadLine());
+            pet1.AType = (Console.ReadLine());
         Console.WriteLine("Please Enter the Animal's age");
-            float age = int.Parse(Console.ReadLine());
+            pet1.Age = int.Parse(Console.ReadLine());
         Console.WriteLine("Please Enter the Animal's gender");
-            string gender = (Console.ReadLine());
+            pet1.Gender = (Console.ReadLine());
         Console.WriteLine("Is the animal Microschipped (Yes/No)");
-            string microchipped = (Console.ReadLine());
+            pet1.Microchipped = (Console.ReadLine());
         Console.WriteLine("Please Enter the Animal's breed");
-            string breed = (Console.ReadLine());
+            pet1.Breed = (Console.ReadLine());
         Console.WriteLine("Please Enter the Animal's price");
-            float price = int.Parse(Console.ReadLine());
-        Console.ReadLine();
+            pet1.Price = int.Parse(Console.ReadLine());
+        Console.Clear();
 
             Console.WriteLine("Pet List");
-            Console.WriteLine("Type: {0}", atype);
-            Console.WriteLine("Age: {0}", age);
-            Console.WriteLine("Gender: {0}", gender);
-            Console.WriteLine("Microchipped: {0}", microchipped);
-            Console.WriteLine("Breed: {0}", breed);
-            Console.WriteLine("Price: ${0}", price);
+            Console.WriteLine("Type: {0}", pet1.AType);
+            Console.WriteLine("Age: {0}", pet1.Age);
+            Console.WriteLine("Gender: {0}", pet1.Gender);
+            Console.WriteLine("Microchipped: {0}", pet1.Microchipped);
+            Console.WriteLine("Breed: {0}", pet1.Breed);
+            Console.WriteLine("Price: ${0}", pet1.Price);
         }
     }
 }

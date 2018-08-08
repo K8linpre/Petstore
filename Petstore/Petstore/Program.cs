@@ -18,8 +18,8 @@ namespace Petstore
             string gender;
             string microchipped;
             string breed;
-            string age;
-            string price;
+            float age;
+            float price;
 
         public string AType
         {
@@ -32,7 +32,7 @@ namespace Petstore
                 atype = value;
             }
         }
-        public string Age
+        public float Age
         {
             get
             {
@@ -76,7 +76,7 @@ namespace Petstore
                 breed = value;
             }
         }
-        public string Price
+        public float Price
         {
             get
             {
@@ -88,7 +88,7 @@ namespace Petstore
             }
         }
     
-        public Pet(string _atype, string _age, string _gender, string _microchipped, string _breed, string _price)
+        public Pet(string _atype, float _age, string _gender, string _microchipped, string _breed, float _price)
         {
             AType = _atype;
             Age = _age;
